@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+    max-width: 90%;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+nav ul li a,
+nav ul li button {
+    font-size: 1rem;
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: rgba(0,0,0,0.5);
+    transition: .3s all linear;
+}
+
+nav ul li a:hover,
+nav ul li button:hover {
+    color: #000;
+}
+
+#login,
+#register,
+#profile {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+form > * {
+    margin: 5px 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 1rem;
+}
+
+.form-group input {
+    padding: 10px 20px;
+    outline: none;
+}
+
+.form-group p {
+    color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    background: red;
+}
+
+.login-btn {
+    font-family: 'Poppins';
+    padding: 10px;
+    font-size: 1rem;
+    background: #000;
+    color: #fff;
+    transition: .3s all linear;
+}
+
+.login-btn:hover {
+    -webkit-box-shadow: 5px 5px 20px -5px rgba(0,0,0,0.4); 
+    box-shadow: 5px 5px 20px -5px rgba(0,0,0,0.4);
+}
+
+form p {
+    align-self: center;
+    color: rgba(0,0,0,0.4);
+}
+
+form p a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+form p a:hover {
+    text-decoration: underline;
+}
+
+.google-btn {
+    align-self: center;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: .3s all linear;
+}
+
+.google-btn:hover {
+    -webkit-box-shadow: 5px 5px 20px -5px rgba(0,0,0,0.4); 
+    box-shadow: 5px 5px 20px -5px rgba(0,0,0,0.4);
+}
+
+.profile-box {
+    width: 70%;
+    padding: 40px 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    -webkit-box-shadow: 5px 5px 20px -5px rgba(0,0,0,0.4); 
+    box-shadow: 5px 5px 20px -5px rgba(0,0,0,0.4);
+}
+
+.profile-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-box .profile-email {
+    font-size: 1rem;
+    color: rgba(0,0,0,0.4);
+}
+
+.profile-box .profile-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
